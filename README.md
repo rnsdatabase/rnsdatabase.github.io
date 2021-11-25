@@ -1,6 +1,6 @@
 # rnsdatabase.github.io
 
-This is the source codes for the RNS database.
+These files are the source codes for the RNS database.
 
 Most files will be redundant. Some will be useful. This is done for the purpose of security of the information stored within the database.
 
