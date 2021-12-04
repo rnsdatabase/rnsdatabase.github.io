@@ -1,53 +1,10 @@
 <!DOCTYPE html>
+<html>
 <link href="style.css" type="text/css" rel="stylesheet">
 <title>RNS Database</title>
-<html>
-    <h2>Data: Student 1</h2>
-<fieldset>
-  <legend>Insert Data</legend>
-  <input id="class" type="text" placeholder="Enter catagory">
-  <input id="detail" type="text" placeholder="Enter detail">
-  <button type="button" id="btnInsert">Insert Data</button>
-  <button type="button" id="btnRemove">Remove Data</button>
-</fieldset>
-<fieldset>
-  <legend>List</legend>
-  <div id="IsOutput"></div>
-  <button type="button" id="btnClear">Clear Data</button>
-</fieldset>
-<script type="text/javascript">
-  const inpKey = document.getElementById("class");
-  const inpvalue = document.getElementById("detail");
-  const btnInsert = document.getElementById("btnInsert");
-  const btnClear = document.getElementById("btnClear");
-  const btnRemove = document.getElementById("btnRemove");
-  const IsOutput = document.getElementById("IsOutput");
-  btnInsert.onclick = function(){
-    const key = inpKey.value;
-    const value = inpvalue.value;
-
-    console.log(key);
-    console.log(value);
-    if (key || value){
-      localStorage.setItem(key, value);
-      location.reload();
-    }
-  };
-  btnClear.onclick = function(){
-    localStorage.clear();
-    location.reload();
-  };
-  btnRemove.onclick = function(){
-    const key = inpKey.value;
-    localStorage.removeItem(key);
-    location.reload();
-  };
-
-  for (let i = 0; i < localStorage.length; i++){
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
-
-    IsOutput.innerHTML += `${key}: ${value}<br>`;
-  }
-</script>
+<h1>Student 1</h1>
+<centre>
+<iframe width=1500 height=600 src="https://docs.google.com/spreadsheets/d/1gAY0JVB-91zVfulyOtSm0RV9q-J8YZ2e5gnv4Sb18lU/edit?usp=sharing?widget=true&amp;rm=minimal&amp;single=true&amp;headers=false"></iframe>
+</centre>
 </html>
+
