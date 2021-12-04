@@ -12,7 +12,11 @@ loginButton.addEventListener("click", (e) => {
         location.href = "page1.html";
     } else if (username === "teacher1" && password === "rnsteacher"){
         alert("Welcome, teacher1.");
-        location.reload();
+        let foo = prompt("Which student page would you like to view?");
+        location.href = "page"+ foo + ".html";
+    } else if (username === "admin" && password === "admin"){
+        let foo = prompt("Enter the page.");
+        location.href = foo;
     }
     else {
         loginErrorMsg.style.opacity = 1;
